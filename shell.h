@@ -1,0 +1,17 @@
+void parseSpace(char *str, char **parsed);
+int takeInput(char *str);
+int builtInCommands(char **parsed);
+void printEcho(char *parsed, char **parsedArray);
+void changeDir(char *parsed);
+void systemCom(char **comandoParseado, int background);
+void printCurrentDirectory();
+int processString(char *str, char **parsed, int argc, char **argv, char **parsedPipe1, char **parsedPipe2, char **io);
+void batchFileCommands(FILE *bf);
+int isBackground(char **parsed);
+int parsePipe(char *str, char **strpiped);
+void execArgsPiped(char **parsed0, char **parsedpipe1, char **parsedpipe2);
+int contadorPipes(char *inputString);
+int outputRedirection(char *str, char **strRed);
+int inputRedirection(char *str, char **strRed);
+void execInputR(char **commands, char **io);
+void execOutputR(char **commands, char **io);
